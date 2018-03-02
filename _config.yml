@@ -84,7 +84,7 @@ author:
   location         : "Cambridge, MA"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?view_op=list_works&hl=en&user=k756zDcAAAAJ"
-  email            : bbrzycki@college.harvard.edu
+  email            : "bbrzycki@college.harvard.edu"
   uri              :
   bitbucket        :
   codepen          :
@@ -99,6 +99,7 @@ author:
   lastfm           :
   linkedin         : "bryan-brzycki-2871507a"
   orcid            : # "https://orcid.org/0000-0002-7461-107X"
+  opgg             : "delphinus6"
   pinterest        :
   soundcloud       : "bryanbrzycki"
   stackoverflow    : # http://stackoverflow.com/users/123456/username

@@ -49,6 +49,9 @@
       {% if author.youtube %}
         <li><a href="https://www.youtube.com/user/{{ author.youtube }}"><i class="fa fa-fw fa-youtube-square" aria-hidden="true"></i> YouTube</a></li>
       {% endif %}
+      {% if author.opgg %}
+        <li><a href="http://na.op.gg/summoner/userName={{ author.opgg }}"><i class="fa fa-fw fa-gamepad" aria-hidden="true"></i> op.gg</a></li>
+      {% endif %}
       {% if author.employer %}
         <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
       {% endif %}
