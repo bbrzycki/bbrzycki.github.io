@@ -4,7 +4,8 @@
 
 .masthead {
   position: relative;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 2px solid $border-color;
+  background-color: $lighter-blue;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -45,6 +46,7 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  background-color: $lighter-blue;
 
   &--lg {
     padding-right: 2em;
