@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Research Projects"
-permalink: /researchprojects/
+title: "Research"
+permalink: /research/
 author_profile: true
 ---
 
@@ -13,6 +13,6 @@ Test markup
 
 {% include base_path %}
 
-{% for post in site.researchprojects reversed %}
+{% for post in site.research reversed %}
   {% include archive-single.html %}
 {% endfor %}
