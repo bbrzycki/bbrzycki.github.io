@@ -1,7 +1,7 @@
 ---
-title: "Research Project 1"
-collection: researchprojects
-permalink: /researchprojects/researchproject1
+title: "Research 1"
+collection: research
+permalink: /research/research1
 venue: "Harvard University, Fall 2017"
 ---
 

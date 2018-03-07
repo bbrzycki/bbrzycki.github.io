@@ -176,10 +176,10 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  researchprojects:
+  research:
     output: true
     permalink: /:collection/:path/
-  codingprojects:
+  code:
     output: true
     permalink: /:collection/:path/
   portfolio:
@@ -228,19 +228,19 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _researchprojects
+  # _research
   - scope:
       path: ""
-      type: researchprojects
+      type: research
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _codingprojects
+  # _code
   - scope:
       path: ""
-      type: codingprojects
+      type: code
     values:
       layout: single
       author_profile: true
