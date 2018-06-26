@@ -8,6 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm an Astrophysics concentrator at Harvard, doing research on galaxy and galaxy cluster simulations.
+Hi! I'm an Astrophysics Ph.D. student at UC Berkeley.
 
-UPDATE ME
+I graduated from Harvard in 2018, with a B.A. in Astrophysics and Physics, cum laude in field. My research focused on galaxy and galaxy cluster simulations.

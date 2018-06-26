@@ -5,9 +5,9 @@ permalink: /code/
 author_profile: true
 ---
 
-{% if site.author.github %}
+<!-- {% if site.author.github %}
   I have a GitHub! Poggers!
-{% endif %}
+{% endif %} -->
 
 {% include base_path %}
 

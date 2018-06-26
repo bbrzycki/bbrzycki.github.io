@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Bryan Brzycki"
 title_separator          : "-"
 name                     : &name "Bryan Brzycki"
-description              : &description "Student researcher at Harvard"
+description              : &description "PhD Student at UC Berkeley"
 url                      : https://bbrzycki.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "bbrzycki.github.io"
@@ -80,11 +80,11 @@ analytics:
 author:
   name             : "Bryan Brzycki"
   avatar           : "profile.png"
-  bio              : "CEO of the USAAAO, student researcher, Harvard undergraduate, songwriter/producer"
+  bio              : "CEO of the USAAAO, PhD Student at UC Berkeley, songwriter/producer"
   location         : "Cambridge, MA"
   employer         :
   googlescholar    : "https://scholar.google.com/citations?view_op=list_works&hl=en&user=k756zDcAAAAJ"
-  email            : "bbrzycki@college.harvard.edu"
+  email            : "bbrzycki@berkeley.edu"
   uri              :
   bitbucket        :
   codepen          :
@@ -119,6 +119,7 @@ include:
   - _pages
   - files
 exclude:
+  - vendor
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -183,6 +184,9 @@ collections:
     output: true
     permalink: /:collection/:path/
   portfolio:
+    output: true
+    permalink: /:collection/:path/
+  usaaao:
     output: true
     permalink: /:collection/:path/
   talks:

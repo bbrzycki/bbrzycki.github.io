@@ -5,11 +5,11 @@ permalink: /research/
 author_profile: true
 ---
 
-Test markup
+Here are some academic research projects I've worked on!
 
-{% if site.author.googlescholar %}
+<!-- {% if site.author.googlescholar %}
   I've done some research! Yay!
-{% endif %}
+{% endif %} -->
 
 {% include base_path %}
 
