@@ -1,7 +1,8 @@
 ---
-title: "Magnetic Fields and Galaxy Cluster Mergers"
+title: "Identifying the Effect of Magnetic Fields on Gas Motion in Galaxy Cluster Merger Simulations"
 collection: research
-permalink: /research/clustermergers
+excerpt: 'Using simulations of galaxy cluster mergers to characterize the effect of magnetic fields on gas motion in merger cores.'
+permalink: /research/cluster-mergers
 ---
 
 Galaxy clusters are the largest gravitationally bound objects in the universe. As such, they are important probes of universal constants such as the dark matter and baryon densities.
