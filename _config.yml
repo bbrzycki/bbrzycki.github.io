@@ -78,12 +78,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "Bryan Brzycki"
+  name             : "Bryan Brzycki 🦈"
   avatar           : "bbrzycki_profile_3024x3024.jpg"
-  bio              : "CEO of the USAAAO, PhD Student at UC Berkeley, songwriter/producer"
+  bio              : "Ph.D. Student at UC Berkeley, Co-Founder of the USAAAO"
   location         : "Berkeley, CA"
   employer         :
-  googlescholar    : "https://scholar.google.com/citations?view_op=list_works&hl=en&user=k756zDcAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=aRVm-UsAAAAJ"
   email            : "bbrzycki@berkeley.edu"
   uri              :
   bitbucket        :
@@ -105,7 +105,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            : # "delphinus6"
   tumblr           :
-  twitter          :
+  twitter          : "bryan6brzycki"
   vine             :
   weibo            :
   xing             :

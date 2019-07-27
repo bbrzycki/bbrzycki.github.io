@@ -8,12 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-Hi! My name's Bryan, and I'm a first-year Astrophysics Ph.D. student at UC Berkeley.
+Hi! My name's Bryan, and I'm a 2nd year Ph.D. student in astrophysics at UC Berkeley.
 
-I graduated from Harvard in May 2018, with a B.A. in Astrophysics and Physics, cum laude in field. For my undergraduate thesis project, I worked with Dr. John ZuHone on investigating the effect of magnetic fields on gas dynamics in the cores of galaxy cluster mergers by using magnetohydrodynamic simulations.
+My professional interests lie in solving interesting problems using math and machine learning, particularly with computer vision and deep learning. Though my formal academic training is in math, physics, and ML, I find it invigorating to tackle all kinds of problems, from understanding noisy audio to object detection in medical imaging.
 
-Currently, I am working with Dr. Andrew Siemion and [Breakthrough Listen](https://seti.berkeley.edu/listen/) to search for ISM-scintillated narrow band signals in radio time-frequency data with convolutional neural networks.
+At Berkeley, I am working with Dr. Andrew Siemion and [Breakthrough Listen](https://seti.berkeley.edu/listen/), using convolutional neural networks to search for ISM-scintillated narrow-band signals in radio time-frequency data. I created a Python package called `setigen` that makes it easy to create synthetic narrow-band signals and insert them into real observations for use in evaluating search algorithms and in training computer vision models.
 
-My research interests lie in machine learning, image classification, and numerical simulations.
+I graduated from Harvard in May 2018, with a B.A. in Astrophysics and Physics, cum laude in field. For my undergraduate thesis project, I worked with Dr. John ZuHone to investigate the effects of magnetic fields on gas dynamics in galaxy cluster mergers using magnetohydrodynamic simulations. A paper on this research is currently under review, and the preprint is [here](https://arxiv.org/abs/1904.10024).
 
-Outside of research, I enjoy music production and writing my own songs, primarily with Logic Pro X. I also enjoy working on various personal coding projects (see [Code](/code/)!).
+I love to brainstorm and work on a multitude of personal projects. Some highlights are [MotivateMeBot](https://twitter.com/MotivateMeBot), a Twitter bot that makes motivational images every day, and [blossom](https://github.com/blossom-evolution/blossom), a Python package that simulates the evolution of a population of organisms.
+
+Outside of research and personal projects, I enjoy music production and writing my own songs, primarily with Logic Pro X. I love sharks and basically everything about the ocean!

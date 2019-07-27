@@ -5,8 +5,6 @@ permalink: /code/
 author_profile: true
 ---
 
-Here are some coding projects I've worked on!
-
 <!-- {% if site.author.github %}
   I have a GitHub! Poggers!
 {% endif %} -->

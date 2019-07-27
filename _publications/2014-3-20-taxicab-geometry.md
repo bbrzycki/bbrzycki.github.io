@@ -11,6 +11,6 @@ citation: 'Brzycki, Bryan. (2014). &quot;On a Geometric Locus in Taxicab Geometr
 
 This paper investigates a classic problem geometry problem in the context of non-Euclidean taxicab geometry.
 
-[Download paper here](http://forumgeom.fau.edu/FG2014volume14/FG201409.pdf)
+[Download paper here](https://bryanbrzycki.com/files/taxicab-geometry-paper.pdf)
 
-Recommended citation: Brzycki, Bryan. (2014). "On a Geometric Locus in Taxicab Geometry." <i>Forum Geometricorum</i>. 14:117-121.
+Recommended citation: Brzycki, B. (2014). "On a Geometric Locus in Taxicab Geometry." <i>Forum Geometricorum</i>. 14:117-121.
