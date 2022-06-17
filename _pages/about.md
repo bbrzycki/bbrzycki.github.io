@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi! My name's Bryan, and I'm a 3rd year Ph.D. student in astrophysics at UC Berkeley.
+Hi! My name's Bryan, and I'm a 4th year Ph.D. student in astrophysics at UC Berkeley.
 
 My professional interests lie in solving interesting problems using math and machine learning, particularly with computer vision and deep learning. Though my formal academic training is in math, physics, and ML, I find it invigorating to tackle all kinds of problems, from understanding noisy audio to object detection in medical imaging.
 
