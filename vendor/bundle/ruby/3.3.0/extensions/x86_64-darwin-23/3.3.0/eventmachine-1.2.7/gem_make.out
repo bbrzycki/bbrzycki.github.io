@@ -1,0 +1,19 @@
+current directory: /Users/bryanbrzycki/Documents/Personal/Personal-Website/bbrzycki.github.io/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/local/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/bryanbrzycki/Documents/Personal/Personal-Website/bbrzycki.github.io/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20240903-87361-lttq4t sitelibdir\=./.gem.20240903-87361-lttq4t clean
+
+current directory: /Users/bryanbrzycki/Documents/Personal/Personal-Website/bbrzycki.github.io/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20240903-87361-lttq4t sitelibdir\=./.gem.20240903-87361-lttq4t
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/bryanbrzycki/Documents/Personal/Personal-Website/bbrzycki.github.io/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20240903-87361-lttq4t sitelibdir\=./.gem.20240903-87361-lttq4t install
+/usr/bin/install -c -m 0755 fastfilereaderext.bundle ./.gem.20240903-87361-lttq4t
+
+current directory: /Users/bryanbrzycki/Documents/Personal/Personal-Website/bbrzycki.github.io/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20240903-87361-lttq4t sitelibdir\=./.gem.20240903-87361-lttq4t clean

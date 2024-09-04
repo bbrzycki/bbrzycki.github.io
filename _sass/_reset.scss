@@ -25,13 +25,13 @@ body { margin: 0; }
 /* Selected elements */
 
 ::-moz-selection {
-  color: #000;
-  background: #99e3ff;
+  color: #fff;
+  background: #000;
 }
 
 ::selection {
-  color: #000;
-  background: #99e3ff;
+  color: #fff;
+  background: #000;
 }
 
 /* Display HTML5 elements in IE6-9 and FF3 */
@@ -81,10 +81,6 @@ a:focus {
 a:hover,
 a:active {
   outline: 0;
-}
-
-a::selection {
-  color: $link-color;
 }
 
 /* Prevent sub and sup affecting line-height in all browsers */

@@ -5,32 +5,33 @@
 # prevent it from being included in the site.
 
 main:
-  - title: "Research"
-    url: /research/
-
-  - title: "Code"
-    url: /code/
-
   - title: "Publications"
     url: /publications/
 
-  - title: "USAAAO"
-    url: /usaaao/
+  - title: "Talks"
+    url: /talks/  
 
-  # - title: "Talks"
-  #   url: /talks/
+  - title: "Projects"
+    url: /code/  
 
   # - title: "Teaching"
-  #   url: /teaching/
-
+  #   url: /teaching/    
+    
   # - title: "Portfolio"
   #   url: /portfolio/
-
+        
   # - title: "Blog Posts"
   #   url: /year-archive/
-
+    
   - title: "Resume"
-    url: /cv/
+    url: /files/bryanbrzycki-resume-24.pdf
+    
+  - title: "CV"
+    url: /files/bryanbrzycki-cv-24.pdf
 
+  - title: "USAAAO"
+    url: /usaaao/
+    
   # - title: "Guide"
-  #   url: /markdown/
+  #   url: https://google.com
+  #   target: _blank

@@ -1,0 +1,18 @@
+current directory: /Users/bryanbrzycki/Documents/Personal/Personal-Website/bbrzycki.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/usr/local/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/bryanbrzycki/Documents/Personal/Personal-Website/bbrzycki.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240903-87361-fypddz sitelibdir\=./.gem.20240903-87361-fypddz clean
+
+current directory: /Users/bryanbrzycki/Documents/Personal/Personal-Website/bbrzycki.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240903-87361-fypddz sitelibdir\=./.gem.20240903-87361-fypddz
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/bryanbrzycki/Documents/Personal/Personal-Website/bbrzycki.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240903-87361-fypddz sitelibdir\=./.gem.20240903-87361-fypddz install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20240903-87361-fypddz/racc
+
+current directory: /Users/bryanbrzycki/Documents/Personal/Personal-Website/bbrzycki.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240903-87361-fypddz sitelibdir\=./.gem.20240903-87361-fypddz clean
