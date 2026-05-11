@@ -196,25 +196,26 @@ function HomePage() {
       image: "/images/2019-09-27.jpg",
     },
   }[mode];
+  const spotlightImageFit = mode === "personal" ? "object-cover" : "object-contain";
 
   return (
     <>
       <section className="relative isolate overflow-hidden bg-zinc-950 text-white">
         <SignalCanvas />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(20,184,166,0.28),transparent_34%),radial-gradient(circle_at_80%_10%,rgba(244,114,182,0.22),transparent_32%),linear-gradient(180deg,rgba(9,9,11,0.12),rgba(9,9,11,0.92))]" />
-        <div className="relative mx-auto grid min-h-[calc(100vh-4rem)] max-w-7xl items-end gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8 lg:py-16">
-          <div className="max-w-4xl pb-6">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-2 text-sm text-white/80 backdrop-blur">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-8 px-4 py-10 sm:px-6 lg:grid-cols-[1.12fr_0.88fr] lg:px-8 lg:py-12">
+          <div className="max-w-4xl">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-2 text-sm text-white/80 backdrop-blur">
               <Orbit size={16} />
               PhD astrophysics, Berkeley 2024 / Harvard 2018
             </div>
-            <h1 className="text-balance text-5xl font-semibold leading-[0.95] sm:text-7xl lg:text-8xl">
+            <h1 className="text-balance text-5xl font-semibold leading-[0.95] sm:text-6xl lg:text-7xl">
               Bryan Brzycki
             </h1>
-            <p className="mt-6 max-w-2xl text-pretty text-lg leading-8 text-zinc-200 sm:text-xl">
+            <p className="mt-4 max-w-3xl text-pretty text-base leading-7 text-zinc-200 sm:text-lg">
               I like solving interesting problems with math, statistics, machine learning, and software. Sometimes that means searching for narrowband radio signals. Sometimes it means building small tools, watching too much sports, or making something just because the idea is stuck in my head.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-wrap gap-3">
               <PrimaryLink to="/about">Open the full story</PrimaryLink>
               <SecondaryLink to="/publications">Explore papers</SecondaryLink>
               <a href="mailto:bryan@bryanbrzycki.com" className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-sm font-semibold text-white transition hover:border-white hover:bg-white hover:text-zinc-950">
@@ -223,8 +224,8 @@ function HomePage() {
               </a>
             </div>
           </div>
-          <div className="pb-8">
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 p-3 shadow-2xl shadow-black/40 backdrop-blur-xl">
+          <div>
+            <div className="relative mx-auto max-w-md overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 p-3 shadow-2xl shadow-black/40 backdrop-blur-xl lg:mr-0">
               <img className="aspect-[4/5] w-full rounded-[1.45rem] object-cover" src="/images/bbrzycki_profile_3024x3024.jpg" alt="Bryan Brzycki" />
               <div className="absolute inset-x-6 bottom-6 rounded-3xl border border-white/15 bg-zinc-950/75 p-4 backdrop-blur-xl">
                 <div className="grid grid-cols-3 gap-3 text-center">
@@ -239,7 +240,7 @@ function HomePage() {
       </section>
 
       <section className="border-b border-zinc-200 bg-white">
-        <div className="mx-auto grid max-w-7xl gap-5 px-4 py-6 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8 xl:grid-cols-8">
+        <div className="mx-auto grid max-w-7xl gap-4 px-4 py-5 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8 xl:grid-cols-8">
           {[
             { label: "About", href: "/about", icon: Compass },
             { label: "Papers", href: "/publications", icon: BookOpen },
@@ -256,13 +257,13 @@ function HomePage() {
       </section>
 
       <section className="bg-stone-50">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <SectionHeading
-            eyebrow="Start here"
-            title="A few ways in."
-            body="Most of the material fits into a few buckets. Pick the one that matches what you came here for."
+            eyebrow="Browse"
+            title="What are you looking for?"
+            body="Research, code, talks, small web apps, and personal interests."
           />
-          <div className="mt-8 grid gap-5 lg:grid-cols-[0.45fr_0.55fr]">
+          <div className="mt-6 grid gap-5 lg:grid-cols-[18rem_minmax(0,1fr)]">
             <div className="rounded-[2rem] border border-zinc-200 bg-white p-3 shadow-sm">
               <div className="grid gap-2">
                 {focusModes.map((item) => {
@@ -273,7 +274,7 @@ function HomePage() {
                       key={item.id}
                       type="button"
                       onClick={() => setMode(item.id)}
-                      className={`flex items-center justify-between rounded-[1.4rem] p-5 text-left transition ${
+                      className={`flex items-center justify-between rounded-[1.4rem] p-4 text-left transition ${
                         active ? "bg-zinc-950 text-white" : "bg-stone-50 text-zinc-700 hover:bg-zinc-100"
                       }`}
                     >
@@ -296,17 +297,17 @@ function HomePage() {
                 })}
               </div>
             </div>
-            <article className="overflow-hidden rounded-[2rem] border border-zinc-200 bg-white shadow-sm">
-              <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
-                <div className="p-7 sm:p-8">
+            <article className="min-w-0 overflow-hidden rounded-[2rem] border border-zinc-200 bg-white shadow-sm">
+              <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(18rem,0.8fr)]">
+                <div className="min-w-0 p-6 sm:p-7">
                   <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">{spotlight.kicker}</p>
-                  <h2 className="mt-4 text-3xl font-semibold tracking-tight text-zinc-950 sm:text-4xl">{spotlight.title}</h2>
+                  <h2 className="mt-3 text-3xl font-semibold tracking-tight text-zinc-950">{spotlight.title}</h2>
                   <p className="mt-4 leading-7 text-zinc-600">{spotlight.body}</p>
                   <Link to={spotlight.href} className="mt-6 inline-flex items-center gap-2 rounded-full bg-zinc-950 px-5 py-3 text-sm font-semibold text-white">
                     Go deeper <ArrowRight size={17} />
                   </Link>
                 </div>
-                <img className="h-full min-h-80 w-full object-cover" src={spotlight.image} alt="" />
+                <img className={`h-full min-h-72 w-full bg-white ${spotlightImageFit}`} src={spotlight.image} alt="" />
               </div>
             </article>
           </div>
@@ -314,13 +315,13 @@ function HomePage() {
       </section>
 
       <section className="border-t border-zinc-200 bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           <SectionHeading
             eyebrow="Live sites"
-            title="Standalone things with their own domains."
-            body="A few web apps that got big enough, or strange enough, to deserve their own little corner of the internet."
+            title="Little web apps I made."
+            body="A few small interactive sites, mostly for playing with ideas that were fun enough to put online."
           />
-          <div className="mt-8 grid gap-5 lg:grid-cols-3">
+          <div className="mt-6 grid gap-5 lg:grid-cols-3">
             {websites.map((item) => (
               <WebsiteMiniCard key={item.slug} item={item} />
             ))}
@@ -332,7 +333,7 @@ function HomePage() {
       </section>
 
       <section className="bg-zinc-950 text-white">
-        <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[0.7fr_1.3fr] lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 lg:grid-cols-[0.7fr_1.3fr] lg:px-8">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-300">Threads</p>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight">The themes that keep showing up.</h2>
@@ -519,7 +520,7 @@ function PublicationDetail() {
     <DetailShell back="/publications" backLabel="Papers">
       <article className="mx-auto max-w-4xl">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">{item.year} / {item.venue}</p>
-        <h1 className="mt-4 text-balance text-4xl font-semibold tracking-tight sm:text-6xl">{item.title}</h1>
+        <h1 className="mt-3 text-balance text-4xl font-semibold tracking-tight sm:text-5xl">{item.title}</h1>
         <p className="mt-6 text-lg leading-8 text-zinc-600">{item.summary}</p>
         <div className="mt-8 flex flex-wrap gap-3">
           <a href={item.url} className="inline-flex items-center gap-2 rounded-full bg-zinc-950 px-5 py-3 text-sm font-semibold text-white">
@@ -611,7 +612,7 @@ function TalkDetail() {
     <DetailShell back="/talks" backLabel="Talks">
       <article className="mx-auto max-w-4xl">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">{item.type} / {formatDate(item.date)}</p>
-        <h1 className="mt-4 text-balance text-4xl font-semibold tracking-tight sm:text-6xl">{item.title}</h1>
+        <h1 className="mt-3 text-balance text-4xl font-semibold tracking-tight sm:text-5xl">{item.title}</h1>
         <div className="mt-6 grid gap-3 text-zinc-600 sm:grid-cols-2">
           <InfoPill icon={Mic2} text={item.venue} />
           <InfoPill icon={MapPin} text={item.location} />
@@ -705,7 +706,7 @@ function ProjectDetail() {
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal-700">Project</p>
-            <h1 className="mt-4 text-balance text-4xl font-semibold tracking-tight sm:text-6xl">{item.title}</h1>
+            <h1 className="mt-3 text-balance text-4xl font-semibold tracking-tight sm:text-5xl">{item.title}</h1>
             <p className="mt-6 text-lg leading-8 text-zinc-600">{item.summary}</p>
             <div className="mt-8 flex flex-wrap gap-3">
               {item.github && (
@@ -749,7 +750,7 @@ function WebsitesPage() {
     <PageShell
       eyebrow="Websites"
       title="Live web apps"
-      intro="Small self-contained websites I built and let live on their own subdomains."
+      intro="Small toy web apps I made and put on their own subdomains."
     >
       <div className="grid gap-6">
         {websites.map((item) => (
@@ -815,7 +816,7 @@ function WebsiteMiniCard({ item }) {
 
 function WebsiteVisual({ item, compact = false }) {
   return (
-    <div className={`min-w-0 max-w-full overflow-hidden rounded-[1.55rem] border border-zinc-200 bg-zinc-950 shadow-sm ${compact ? "aspect-[36/25]" : "aspect-[36/25]"}`}>
+    <div className={`min-w-0 max-w-full overflow-hidden rounded-[1.55rem] border border-zinc-200 bg-white shadow-sm ${compact ? "aspect-[36/25]" : "aspect-[36/25]"}`}>
       <img
         src={item.image}
         alt={`Screenshot of ${item.title}`}
@@ -1078,13 +1079,13 @@ function PageShell({ eyebrow, title, intro, children }) {
   return (
     <div className="bg-stone-50">
       <section className="border-b border-zinc-200 bg-white">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-teal-700">{eyebrow}</p>
-          <h1 className="mt-4 max-w-5xl text-balance text-4xl font-semibold tracking-tight text-zinc-950 sm:text-6xl">{title}</h1>
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-zinc-600">{intro}</p>
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-700 sm:text-sm">{eyebrow}</p>
+          <h1 className="mt-3 max-w-5xl text-balance text-4xl font-semibold tracking-tight text-zinc-950 sm:text-5xl">{title}</h1>
+          <p className="mt-3 max-w-4xl text-base leading-7 text-zinc-600 sm:text-lg">{intro}</p>
         </div>
       </section>
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">{children}</section>
+      <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">{children}</section>
     </div>
   );
 }
@@ -1092,13 +1093,13 @@ function PageShell({ eyebrow, title, intro, children }) {
 function DetailShell({ back, backLabel, children }) {
   return (
     <div className="bg-stone-50">
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6 lg:px-8">
         <Link to={back} className="inline-flex items-center gap-2 rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm font-semibold text-zinc-900 shadow-sm hover:border-zinc-950">
           <ArrowLeft size={16} />
           Back to {backLabel}
         </Link>
       </div>
-      <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">{children}</section>
+      <section className="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">{children}</section>
     </div>
   );
 }
